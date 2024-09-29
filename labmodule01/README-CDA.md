@@ -9,9 +9,11 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-IN
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 **What does your implementation do?**
+
 The Implementation allows me to set the environment and its configuration to be able to run the CDA Application successfully.
 
 **How does your implementation work?**
+
 The implementation works by follows:
  - Updating ConfigConst.py with relative path for PiotConfig.props
  - Setting the python path correctly in the virtual Environment
