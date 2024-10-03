@@ -8,15 +8,17 @@ Be sure to implement all the PIOT-GDA-* issues (requirements) listed at [PIOT-IN
 
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
-What does your implementation do? 
+What does your implementation do?
+Implementation creates the functionality to get the system performance data and connects that to the GatewayDeviceApp 
 
 How does your implementation work?
+it works by creating the SystemPerformanceManager module, integrates it to the GatewayDeviceApp. Then creates sub modules for getting Cpu and Memory usages using the Java management library. These classes inherit from the BaseSystemUtilTask abstract class. the cpu and memory usage methods are then called from the SystemPerformanceManager. These methods run continuously with a library Executors.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
 
-URL: 
+URL: https://github.comn/piot-java-components/tree/labmodule02
 
 ### UML Design Diagram(s)
 
@@ -24,6 +26,7 @@ NOTE: Include one or more UML designs representing your solution. It's expected 
 diagram you provide will look similar to, but not the same as, its counterpart in the
 book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
 
+![Labmodule02 GDA](/images/labmodule02_cda.png)
 
 ### Unit Tests Executed
 
@@ -43,7 +46,8 @@ your code to ensure it's correct. As for the tests you execute, you only need to
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 - GatewayDeviceAppTest
-- 
-- 
+
+### Test Commands (Review)
+mvn test -Dtest=GatewayDeviceAppTest
 
 EOF.
