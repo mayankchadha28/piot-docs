@@ -9,14 +9,16 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-IN
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
+Implementation integrates the data conversioon logic for the sensor data and actuator data. To and from JSON.
 
 How does your implementation work?
+This works by first integrating the SystemPerformanceData to the SystemPerformanceManager. Then updates the DataUtil classes to to convert sensor and actuator data to and from JSON.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
 
-URL: https://github.comn/piot-python-components/tree/labmodule04
+URL: https://github.comn/piot-python-components/tree/labmodule05
 
 ### UML Design Diagram(s)
 
@@ -24,6 +26,7 @@ NOTE: Include one or more UML designs representing your solution. It's expected 
 diagram you provide will look similar to, but not the same as, its counterpart in the
 book [Programming the IoT](https://learning.oreilly.com/library/view/programming-the-internet/9781492081401/).
 
+![Labmodule05 CDA](../images/labmodule05_cda.png)
 
 ### Unit Tests Executed
 
