@@ -9,15 +9,16 @@ Be sure to implement all the PIOT-CDA-* issues (requirements) listed at [PIOT-IN
 NOTE: Include two full paragraphs describing your implementation approach by answering the questions listed below.
 
 What does your implementation do? 
-
+This class creates an MQTT client that publishes and subscribes to certain topics.
 
 How does your implementation work?
+The implementation works by creating a MQTTClientConnector that handles client creation. The modules then integrates publisher and subscriber functionality to call from other classes. Finally we integrate all this into the DeviceDataManager to handle all the calls to classes.
 
 ### Code Repository and Branch
 
 NOTE: Be sure to include the branch (e.g. https://github.com/programming-the-iot/python-components/tree/alpha001).
 
-URL: 
+URL: https://github.com/mayankchadha28/piot-python-components/tree/labmodule06
 
 ### UML Design Diagram(s)
 
@@ -44,7 +45,7 @@ your code to ensure it's correct. As for the tests you execute, you only need to
 test case below (e.g. SensorSimAdapterManagerTest, DeviceDataManagerTest, etc.)
 
 - MqttClientConnectorTest
-- 
+- MqttControlPacketTest
 - 
 
 EOF.
